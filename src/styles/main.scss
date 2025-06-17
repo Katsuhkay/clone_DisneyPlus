@@ -1,20 +1,29 @@
 @use 'variaveis';
 @use 'hero';
+@use 'shows';
 
+@font-face {
+    font-family: Avenir;
+    src: url(../../assests/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
 
-
-
+@font-face {
+    font-family: AvenirBold;
+    src: url(../../assests/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Avenir, sans-serif;
 }
 
 body {
     background-color: variaveis.$corDeFundo;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
 }
 
 @mixin text($fontSize: 16px) {
