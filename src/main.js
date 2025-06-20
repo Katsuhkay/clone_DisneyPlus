@@ -37,3 +37,33 @@ function removeActiveButtons() {
         button.classList.remove('shows__tabs__button--is--active');
     });
 }
+
+// Seção do FAQ - Efeito Sanfona
+const faqQuestions = document.querySelectorAll('[data-faq-question]');
+
+faqQuestions.forEach(question => {
+    question.addEventListener('click', abreOuFechaResposta);
+});
+
+function abreOuFechaResposta(elemento) {
+    // Pega o elemento clicado (a pergunta)
+    const classe = 'faq__questions__item--is--open';
+    const elementoPai = elemento.currentTarget.parentNode;
+
+    // Fecha todas as outras respostas primeiro
+    fechaTodasRespostas(elementoPai);
+
+    // Alterna a classe que mostra/esconde a resposta
+    elementoPai.classList.toggle(classe);
+}
+
+function fechaTodasRespostas(elementoAtual) {
+    const questionsItems = document.querySelectorAll('.faq__questions__item');
+
+    questionsItems.forEach(item => {
+        // Fecha todas as respostas exceto a que está sendo clicada
+        if (item !== elementoAtual) {
+            item.classList.remove('faq__questions__item--is--open');
+        }
+    });
+}
