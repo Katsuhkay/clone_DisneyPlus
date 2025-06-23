@@ -67,3 +67,26 @@ function fechaTodasRespostas(elementoAtual) {
         }
     });
 }
+
+const heroSection = document.querySelector('.hero');
+const alturaHero = heroSection.clientHeight;
+
+window.addEventListener('scroll', () => {
+    const posicaoAtual = window.scrollY;
+
+    if (posicaoAtual < alturaHero) {
+        ocultaElementosDoHeader();
+    } else {
+        exibeRemoveElementosDoHeader();
+    }
+});
+
+function ocultaElementosDoHeader () {
+    const header = document.querySelector('header');
+    header.classList.add('header--is-hidden');
+}
+
+function exibeRemoveElementosDoHeader () {
+    const header = document.querySelector('header');
+    header.classList.remove('header--is-hidden');
+}
