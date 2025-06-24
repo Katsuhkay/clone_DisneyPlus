@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "gulp watch",
     "build": "gulp",
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,9 @@
     "url": "https://github.com/Katsuhkay/clone_DisneyPlus/issues"
   },
   "homepage": "https://github.com/Katsuhkay/clone_DisneyPlus#readme",
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
