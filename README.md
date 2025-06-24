@@ -30,13 +30,7 @@ Este projeto é uma réplica responsiva da página inicial do Disney+, incluindo
    ```  
 
 3. **Abra o arquivo `index.html` no navegador:**  
-   - Basta arrastar o arquivo para o navegador ou usar um servidor local (como Live Server no VSCode).  
-
-## 🔍 Preview  
-
-![Preview do Clone Disney+](https://github.com/Katsuhkay/clone_DisneyPlus/blob/main/preview.png?raw=true)  
-
-*(Inclua uma imagem ou GIF do projeto no repositório e atualize o link acima.)*  
+   - Basta arrastar o arquivo para o navegador ou usar um servidor local (como Live Server no VSCode). 
 
 ## 📝 Licença  
 
